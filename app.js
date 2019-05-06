@@ -55,7 +55,6 @@ app.get('/', (req, res) => {
 
 app.get('/about', (req, res) => {
   res.render('about');
-  console.log('Somebody in about..')
 })
 
 // [Ideas Index Route]
@@ -92,13 +91,12 @@ app.post('/ideas', (req, res) => {
     })
 })
 
-
-
-
-
 const port = process.env.PORT || 4000;
 
 app.listen(port, () => {
   console.log(`Server started on port ${port}`);
 });
+
+
+
 
